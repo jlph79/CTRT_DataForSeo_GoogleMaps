@@ -45,7 +45,7 @@ Elke DataForSEO gebruiker heeft een 'account' en een uniek wachtwoord dat door D
 
 1. **Configure API Key**
 
-    Open the `GoogleMapsEndPoint_raw.py` file and replace `'your_api_key_here'` with your actual DataForSEO API key.
+    Open the `GoogleMapsEndPoint_raw.py` file and replace `'api credentials'` with your actual DataForSEO API key.
 
     ```python
         RestClient = RestClient("your_account@example.com", "xxxxxxxxxxx") 
