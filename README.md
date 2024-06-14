@@ -27,7 +27,7 @@ Before you begin, ensure you have the following:
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/yourusername/dataforseo-google-maps.git
+    git clone https://github.com/jlph79/CTRT_DataForSeo_GoogleMaps
     cd dataforseo-google-maps
     ```
 
@@ -41,12 +41,14 @@ Before you begin, ensure you have the following:
 
 ## Usage
 
+Elke DataForSEO gebruiker heeft een 'account' en een uniek wachtwoord dat door DataForSEO gegenereerd wordt. Dit is niet hetzelfde wachtwoord als je wachtwoord voor inloggen in de DataForSEO portal. De account en API wachtwoord kun je terugvinden in het DataForSEO dashboard. Voor de documentatie van de API endpoints, kun je terecht op [DataForSEO API Documentation](https://docs.dataforseo.com/v3/serp/google/overview/?bash&_gl=1*eo9o81*_up*MQ..*_ga*MTUwMjUyMjQ5NC4xNzE4MzY1Njk1*_ga_T5NKP5Y695*MTcxODM2NTY5NC4xLjEuMTcxODM2NjkwMC4wLjAuMTE1OTcwMDQwNA..).
+
 1. **Configure API Key**
 
-    Open the `data_collection.py` file and replace `'your_api_key_here'` with your actual DataForSEO API key.
+    Open the `GoogleMapsEndPoint_raw.py` file and replace `'your_api_key_here'` with your actual DataForSEO API key.
 
     ```python
-    api_key = 'your_api_key_here'
+        RestClient = RestClient("your_account@example.com", "xxxxxxxxxxx") 
     ```
 
 2. **Run the Script**
@@ -54,7 +56,7 @@ Before you begin, ensure you have the following:
     Execute the script to start collecting data:
 
     ```bash
-    python data_collection.py
+    python GoogleMapsEndPoint_raw.py
     ```
 
 3. **Output**
@@ -77,12 +79,10 @@ The following flowchart illustrates the script flow:
    - **In Queue or Processing**: Wait and retry
    - **Error**: Log error and exit
 
-For a detailed understanding, refer to the `data_collection.py` script and the accompanying flowchart.
+For a detailed understanding, refer to the `GoogleMapsEndPoint_raw.py` script and the accompanying flowchart.
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+ 
