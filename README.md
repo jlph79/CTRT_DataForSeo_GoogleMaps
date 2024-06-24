@@ -28,9 +28,9 @@ Before you begin, ensure you have the following:
 
     Step 0: Install Python 3.12.3
 
-Make sure you have Python 3.12.3 installed on your system. You can download it from the [official Python website](https://www.python.org/downloads/release/python-3123/).
+    Make sure you have Python 3.12.3 installed on your system. You can download it from the [official Python website](https://www.python.org/downloads/release/python-3123/).
 
-To check your Python version, open your terminal or command prompt and run:
+    To check your Python version, open your terminal or command prompt and run:
     
     ```bash
     python --version
