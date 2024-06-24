@@ -131,7 +131,7 @@ def extract_selected_GoogleMaps_data(response_GoogleMaps):
 
 
 # Define the absolute path where you want to save the file
-save_directory = os.path.abspath(os.path.join('..', 'Ghana - CTRT\DataForSEO'))
+save_directory = os.path.abspath(os.path.join('..', 'CTRT_DataForSeo_GoogleMaps\DataForSEO'))
 os.makedirs(save_directory, exist_ok=True)
 file_path = os.path.join(save_directory, 'extracted_GoogleMapsDataset_Filtered.json')
 
