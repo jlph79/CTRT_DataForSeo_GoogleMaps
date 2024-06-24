@@ -1,0 +1,12 @@
+# Dummy package (no real purpose, just for demonstration)
+# This could be replaced with any real package your script might need in the future
+requests==2.32.3
+
+# Note: Python Includes a standard library packages bellow,
+# We show how it might look (not actually needed).
+
+#json==2.0.9
+#http.client==1.0.3
+#base64==1.0.0
+#time==3.0.0
+#os==1.0.0
