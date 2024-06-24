@@ -6,8 +6,6 @@ import time
 import os
 ## In this version of the code , the user can select the desired fields to be stored in the output file.
 
-# Initialize RestClient with your credentials
-RestClient = RestClient("your_account@example.com", "xxxxxxxxxxx") 
 
 # Define your task
 keyword = "Computers Shops Accra"  # Corrected field name
@@ -42,6 +40,10 @@ class RestClient:
     def post(self, path, data):
         data_str = dumps(data) if not isinstance(data, str) else data
         return self.request(path, 'POST', data_str)
+
+# Initialize RestClient with your credentials
+RestClient = RestClient("your_account@example.com", "xxxxxxxxxxx") 
+
 
 # Function for to submit task to DataForSEO Servers
 def submit_GoogleMaps_post_task(client,keyword):
