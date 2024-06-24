@@ -89,7 +89,7 @@ def wait_for_task_completion(client, task_id):
 
 
 # Define the absolute path where you want to save the file
-save_directory = os.path.abspath(os.path.join('..', 'CTRT_DataForSeo_GoogleMaps\DataForSEO'))
+save_directory = os.path.abspath(os.path.join('..', 'CTRT_DataForSeo_GoogleMaps/DataForSEO_Output'))
 os.makedirs(save_directory, exist_ok=True)
 file_path = os.path.join(save_directory, 'extracted_GoogleMapsDataset_raw.json')
 
