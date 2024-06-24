@@ -5,9 +5,6 @@ from json import loads, dumps
 import time
 import os
 
-# Initialize RestClient with your credentials
-RestClient = RestClient("your_account@example.com", "xxxxxxxxxxx") 
-
 # Define your task
 keyword = "Computers Shops Accra"   
 
@@ -41,6 +38,9 @@ class RestClient:
     def post(self, path, data):
         data_str = dumps(data) if not isinstance(data, str) else data
         return self.request(path, 'POST', data_str)
+
+# Initialize RestClient with your credentials
+RestClient = RestClient("your_account@example.com", "xxxxxxxxxxx") 
 
 # Function for to submit task to DataForSEO Servers
 def submit_GoogleMaps_post_task(client,keyword):
@@ -89,7 +89,7 @@ def wait_for_task_completion(client, task_id):
 
 
 # Define the absolute path where you want to save the file
-save_directory = os.path.abspath(os.path.join('..', 'Ghana - CTRT\DataForSEO'))
+save_directory = os.path.abspath(os.path.join('..', 'CTRT_DataForSeo_GoogleMaps/DataForSEO_Output'))
 os.makedirs(save_directory, exist_ok=True)
 file_path = os.path.join(save_directory, 'extracted_GoogleMapsDataset_raw.json')
 

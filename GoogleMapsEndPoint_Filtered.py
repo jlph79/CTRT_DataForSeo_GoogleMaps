@@ -6,8 +6,6 @@ import time
 import os
 ## In this version of the code , the user can select the desired fields to be stored in the output file.
 
-# Initialize RestClient with your credentials
-RestClient = RestClient("your_account@example.com", "xxxxxxxxxxx") 
 
 # Define your task
 keyword = "Computers Shops Accra"  # Corrected field name
@@ -42,6 +40,10 @@ class RestClient:
     def post(self, path, data):
         data_str = dumps(data) if not isinstance(data, str) else data
         return self.request(path, 'POST', data_str)
+
+# Initialize RestClient with your credentials
+RestClient = RestClient("your_account@example.com", "xxxxxxxxxxx") 
+
 
 # Function for to submit task to DataForSEO Servers
 def submit_GoogleMaps_post_task(client,keyword):
@@ -129,7 +131,7 @@ def extract_selected_GoogleMaps_data(response_GoogleMaps):
 
 
 # Define the absolute path where you want to save the file
-save_directory = os.path.abspath(os.path.join('..', 'Ghana - CTRT\DataForSEO'))
+save_directory = os.path.abspath(os.path.join('..', 'CTRT_DataForSeo_GoogleMaps/DataForSEO_Output'))
 os.makedirs(save_directory, exist_ok=True)
 file_path = os.path.join(save_directory, 'extracted_GoogleMapsDataset_Filtered.json')
 
