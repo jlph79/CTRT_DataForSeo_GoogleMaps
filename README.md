@@ -50,6 +50,7 @@ Before you begin, ensure you have the following:
     ```bash
     pip install -r requirements.txt
     ```
+    Note: In this case, all required libraries are available in the Python scripts. This step is only for demonstrating a best practice for installing required packages.
     
 ## Usage
 
