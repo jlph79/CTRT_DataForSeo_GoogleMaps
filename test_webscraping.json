@@ -1,0 +1,180 @@
+{
+    "version": "0.1.20240514",
+    "status_code": 20000,
+    "status_message": "Ok.",
+    "time": "0.0990 sec.",
+    "cost": 0,
+    "tasks_count": 1,
+    "tasks_error": 0,
+    "tasks": [
+      {
+        "id": "06241421-7946-0066-0000-24f3fed642c7",
+        "status_code": 20000,
+        "status_message": "Ok.",
+        "time": "0.0407 sec.",
+        "cost": 0,
+        "result_count": 1,
+        "path": [
+          "v3",
+          "serp",
+          "google",
+          "maps",
+          "task_get",
+          "advanced",
+          "06241421-7946-0066-0000-24f3fed642c7"
+        ],
+        "data": {
+          "api": "serp",
+          "function": "task_get",
+          "se": "google",
+          "se_type": "maps",
+          "location_name": "Ghana",
+          "language_name": "English",
+          "search_places": true,
+          "max_crawl_pages": 100,
+          "keyword": "Highschools Accra",
+          "device": "desktop",
+          "os": "windows"
+        },
+        "result": [
+          {
+            "keyword": "Highschools Accra",
+            "type": "maps",
+            "se_domain": "google.com.gh",
+            "location_code": 2288,
+            "language_code": "en",
+            "check_url": "https://google.com.gh/maps/search/Highschools+Accra/@7.946527,-1.023194,6z?hl=en&gl=GH&uule=w+CAIQIFISCcfW2qjNWtcPETbSk9Aw8tdU",
+            "datetime": "2024-06-24 11:22:10 +00:00",
+            "spell": {
+              "keyword": "High Schools Accra",
+              "type": "did_you_mean"
+            },
+            "item_types": [
+              "maps_search"
+            ],
+            "se_results_count": 0,
+            "items_count": 100,
+            "items": [
+              {
+                "type": "maps_search",
+                "rank_group": 1,
+                "rank_absolute": 1,
+                "domain": null,
+                "title": "Accra High School",
+                "url": null,
+                "contact_url": null,
+                "rating": {
+                  "rating_type": "Max5",
+                  "value": 4.2,
+                  "votes_count": 162,
+                  "rating_max": null
+                },
+                "hotel_rating": null,
+                "price_level": null,
+                "rating_distribution": {
+                  "1": 10,
+                  "2": 4,
+                  "3": 15,
+                  "4": 40,
+                  "5": 93
+                },
+                "snippet": "Kenneth Kaunda Rd, Accra",
+                "address": "Kenneth Kaunda Rd, Accra",
+                "address_info": {
+                  "borough": "Osu Klottey",
+                  "address": "Kenneth Kaunda Rd",
+                  "city": "Accra",
+                  "zip": null,
+                  "region": null,
+                  "country_code": "GH"
+                },
+                "place_id": "ChIJI27_m0GZ3w8R9K-mEeF4Ihw",
+                "phone": "+233302224737",
+                "main_image": "https://lh5.googleusercontent.com/p/AF1QipNYhcgeHj8_NXdCp7jdeSzAzuXS64RfIYmoM996=w408-h306-k-no",
+                "total_photos": 102,
+                "category": "Senior high school",
+                "additional_categories": null,
+                "category_ids": [
+                  "senior_high_school"
+                ],
+                "work_hours": {
+                  "timetable": {
+                    "sunday": null,
+                    "monday": [
+                      {
+                        "open": {
+                          "hour": 8,
+                          "minute": 0
+                        },
+                        "close": {
+                          "hour": 17,
+                          "minute": 0
+                        }
+                      }
+                    ],
+                    "tuesday": [
+                      {
+                        "open": {
+                          "hour": 8,
+                          "minute": 0
+                        },
+                        "close": {
+                          "hour": 17,
+                          "minute": 0
+                        }
+                      }
+                    ],
+                    "wednesday": [
+                      {
+                        "open": {
+                          "hour": 8,
+                          "minute": 0
+                        },
+                        "close": {
+                          "hour": 17,
+                          "minute": 0
+                        }
+                      }
+                    ],
+                    "thursday": [
+                      {
+                        "open": {
+                          "hour": 8,
+                          "minute": 0
+                        },
+                        "close": {
+                          "hour": 17,
+                          "minute": 0
+                        }
+                      }
+                    ],
+                    "friday": [
+                      {
+                        "open": {
+                          "hour": 8,
+                          "minute": 0
+                        },
+                        "close": {
+                          "hour": 17,
+                          "minute": 0
+                        }
+                      }
+                    ],
+                    "saturday": null
+                  },
+                  "current_status": "open"
+                },
+                "feature_id": "0xfdf99419bff6e23:0x1c2278e111a6aff4",
+                "cid": "2027315690329255924",
+                "latitude": 5.5675617,
+                "longitude": -0.19991779999999998,
+                "is_claimed": true,
+                "local_justifications": null,
+                "is_directory_item": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

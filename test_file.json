@@ -1,0 +1,32 @@
+{
+	"top_level": {
+		"level1": {
+			"level2": {
+				"items": [
+					{
+						"id": 1,
+						"name": "Item 1",
+						"details": {
+							"description": "Description of Item 1",
+							"metadata": {
+								"type": "Type A",
+								"tags": "tag1"
+							}
+						}
+					},
+					{
+						"id": 2,
+						"name": "Item 2",
+						"details": {
+							"description": "Description of Item 2",
+							"metadata": {
+								"type": "Type B",
+								"tags": "tag2"
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}
