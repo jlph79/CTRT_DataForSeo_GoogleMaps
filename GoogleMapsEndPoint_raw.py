@@ -6,7 +6,7 @@ import time
 import os
 
 # Define your task
-keyword = "Highschools Accra"   
+keyword = "Hospitals Accra"   
 
 ## Api Rest Connector for DataForSEO 
 class RestClient:
