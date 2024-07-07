@@ -35,8 +35,43 @@ print(df)
 
 #REPLACE
 df['rating_value'] = df['rating_value'].replace(4.2, 0)
-print(df[['rating_value']].to_string(index=False)) 
+#print(df[['rating_value']].to_string(index=False)) 
 
+#df['A'] = df['A'].replace('@', '', regex=True)
+
+#SPLIT
+
+print(df[['address']].to_string(index=False)) 
+split_columns = df['address'].str.split(',', expand=True)
+
+# Rename the new columns (optional)
+max_splits = split_columns.shape[1]
+column_names = [f'Col{i+1}' for i in range(max_splits)]
+split_columns.columns = column_names
+
+print(split_columns)
+df = pd.concat([df, split_columns], axis=1)
+
+df['Streetname'] = df['address'].str.split(',', n=1).str[0]
+#print(df[['Streetname']].to_string(index=False)) 
+
+#RATING
+def classify_rating(rating):
+    if rating > 4:
+        return 'High'
+    elif 2.5 <= rating <= 4:
+        return 'Average'
+    else:
+        return 'Low'
+
+# Create the rating_category column
+df['rating_category'] = df['rating_value'].apply(classify_rating)
+print(df[['rating_category']].to_string(index=False)) 
+
+pd.set_option('display.max_columns', None)
+print(df)
+# Concatenate the new columns with the original dataframe
+#df = pd.concat([df, split_columns], axis=1)
 
 new_schema = 'silver'
 new_table_name = 'Population'
