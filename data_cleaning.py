@@ -34,7 +34,7 @@ print(df)
 # Add transformations
 
 #REPLACE
-df['rating_value'] = df['rating_value'].replace(4.2, 0)
+df['rating_value'] = df['rating_value'].replace(',', 0)
 #print(df[['rating_value']].to_string(index=False)) 
 
 #df['A'] = df['A'].replace('@', '', regex=True)
