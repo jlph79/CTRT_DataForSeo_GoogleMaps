@@ -73,6 +73,10 @@ print(df)
 # Concatenate the new columns with the original dataframe
 #df = pd.concat([df, split_columns], axis=1)
 
+df = df.drop(columns=['Col4'])
+
+print(df)
+
 new_schema = 'silver'
 new_table_name = 'Population'
 

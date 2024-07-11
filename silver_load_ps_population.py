@@ -49,7 +49,11 @@ df_pop['Number of Households'] = (
 
 df_pop['Average Household Size'] = df_pop['Average Household Size'].astype(float)
 
+
+from datetime import datetime
+
 df_pop['Date'] = datetime.today().strftime('%m/%d/%Y')
+df_pop['Date'] = pd.to_datetime(df_pop['Date']).dt.date
 
 print(df_pop)
 
