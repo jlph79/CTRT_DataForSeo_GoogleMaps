@@ -6,7 +6,7 @@ import time
 import os
 
 # Define your task
-keyword = "Computers Shops Accra"   
+keyword = "Hospitals Accra"   
 
 ## Api Rest Connector for DataForSEO 
 class RestClient:
@@ -40,7 +40,7 @@ class RestClient:
         return self.request(path, 'POST', data_str)
 
 # Initialize RestClient with your credentials
-RestClient = RestClient("your_account@example.com", "xxxxxxxxxxx") 
+RestClient = RestClient("pscheer@hso.com", "265132516635cdb5") 
 
 # Function for to submit task to DataForSEO Servers
 def submit_GoogleMaps_post_task(client,keyword):
@@ -91,7 +91,7 @@ def wait_for_task_completion(client, task_id):
 # Define the absolute path where you want to save the file
 save_directory = os.path.abspath(os.path.join('..', 'CTRT_DataForSeo_GoogleMaps/DataForSEO_Output'))
 os.makedirs(save_directory, exist_ok=True)
-file_path = os.path.join(save_directory, 'extracted_GoogleMapsDataset_raw.json')
+file_path = os.path.join(save_directory, 'extracted_GoogleMapsDataset_schools_raw.json')
 
 # Submit review task and process results
 task_ids = submit_GoogleMaps_post_task(RestClient, keyword)
